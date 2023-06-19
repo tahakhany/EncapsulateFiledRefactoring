@@ -1,0 +1,42 @@
+/* Before refactoring (Original version) */
+class A
+{
+    private int testVariable; /* public field */
+    private String testString;
+    private String testStringB;
+	public String getTestStringB() { 
+		 return this.testStringB;
+	}
+	public void setTestStringB(String testStringB) { 
+		this.testStringB = testStringB;
+	}
+	/*End of accessor and mutator methods!*/
+
+private boolean testBoolean;
+	public boolean getTestBoolean() { 
+		 return this.testBoolean;
+	}
+	public void setTestBoolean(boolean testBoolean) { 
+		this.testBoolean = testBoolean;
+	}
+	/*End of accessor and mutator methods!*/
+
+void m(int i)
+    {
+        B.setTestVariableB(i * this.testVariable);
+    }
+
+    void main()
+    {
+        B objB = new B();
+        A objA = new A();
+
+        String testStringB = "test";
+
+        testStringB = "hassan";
+
+        objB.setTestStringB("hossein");
+
+        objA.setTestStringB("reza");
+    }
+}

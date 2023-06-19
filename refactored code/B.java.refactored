@@ -1,0 +1,36 @@
+class B
+{
+    private int testVariable;
+	public int getTestVariable() { 
+		 return this.testVariable;
+	}
+	public void setTestVariable(int testVariable) { 
+		this.testVariable = testVariable;
+	}
+	/*End of accessor and mutator methods!*/
+
+private String testStringB;
+	public String getTestStringB() { 
+		 return this.testStringB;
+	}
+	public void setTestStringB(String testStringB) { 
+		this.testStringB = testStringB;
+	}
+	/*End of accessor and mutator methods!*/
+
+private boolean testBooleanB;
+	public boolean getTestBooleanB() { 
+		 return this.testBooleanB;
+	}
+	public void setTestBooleanB(boolean testBooleanB) { 
+		this.testBooleanB = testBooleanB;
+	}
+	/*End of accessor and mutator methods!*/
+
+void m(int i)
+    {
+        this.setTestVariable(i * A.getTestVariable());
+        if(A.getTestVariable() == testVariable){
+        }
+    }
+}
